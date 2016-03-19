@@ -19,7 +19,7 @@ public class ScalaConverter {
 	private static final String DEFAULT_ENCODING = "UTF-8";
 	public static void main(String args[]){
 		try {
-			Files.walk(Paths.get("/home/jijesh/Briefcase/sources/components/jesp/src/main/java/com/rxp/jesp")).forEach(filePath -> {
+			Files.walk(Paths.get("yourproject/src/main/java/packageToConvert")).forEach(filePath -> {
 			    if (Files.isRegularFile(filePath)) {
 			    	File file = filePath.toFile();
 			    	String javaFilePath = filePath.toString();
